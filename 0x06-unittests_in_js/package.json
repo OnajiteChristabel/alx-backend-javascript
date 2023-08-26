@@ -1,0 +1,25 @@
+{
+  "name": "my-unit-tests",
+  "version": "1.0.0",
+  "description": "Unit testing and linting in JavaScript",
+  "scripts": {
+    "test": "mocha",
+    "lint": "./node_modules/.bin/eslint",
+    "lint-check": "lint [0-9]*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-my-base": "^1.0.0",
+    "eslint-plugin-custom-imports": "^1.0.0",
+    "eslint-plugin-custom-mocha": "^1.0.0",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0",
+    "sinon": "^12.0.1"
+  }
+}

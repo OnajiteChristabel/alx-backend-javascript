@@ -5,12 +5,12 @@ const calculateNumber = require("./0-calcul");
 describe("calculateNumber()", function() {
 
     it(`checking if numbers round`, function() {
-      const res = calculateNumber(1, 2);
-      assert.strictEqual(res, 3);
+      const res = calculateNumber(1, 3);
+      assert.strictEqual(res, 4);
     });
     it(`checking if numbers round`, function() {
-      const res = calculateNumber(1.4, 2.2);
-      assert.strictEqual(res, 3);
+      const res = calculateNumber(2.4, 2.2);
+      assert.strictEqual(res, 4);
     });
     it(`checking if numbers round`, function() {
       const res = calculateNumber(1.6, 2.7);
@@ -25,7 +25,7 @@ describe("calculateNumber()", function() {
       assert.strictEqual(res, -4);
     });
     it(`checking if numbers round`, function() {
-      const res = calculateNumber(-1.4, -1.3);
-	assert.strictEqual(res, -2);
+      const res = calculateNumber(-1.4, -2.3);
+	assert.strictEqual(res, -3);
     });
 });
